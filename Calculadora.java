@@ -5,9 +5,9 @@ public class Calculadora {
     public static void main(String[] args) {
         int A = 0, B = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite 1 numero:\n");
+        System.out.print("Digite um numero:\n");
         A = scanner.nextInt();
-        System.out.print("Digite 2 numero:\n");
+        System.out.print("Digite outro numero:\n");
         B = scanner.nextInt();
 
         System.out.print("Escolha um número de 1 a 4 para escolher a opreção que deseja usar:\n\n"
