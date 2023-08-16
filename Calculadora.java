@@ -1,10 +1,12 @@
+import javax.lang.model.type.NullType;
+
 public class Calculadora extends javax.swing.JFrame {
 
     public Calculadora() {
         initComponents();
     }
 
-    double val1, val2, res;
+    Double val1, val2, res;
     String sinal;
 
     @SuppressWarnings("unchecked")
@@ -316,12 +318,11 @@ public class Calculadora extends javax.swing.JFrame {
     }
 
     private void txtResActionPerformed(java.awt.event.ActionEvent evt) {
-
+        txtRes.setText(txtRes.getText() + "");
     }
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {
 
-        txtRes.setText(txtRes.getText() + "0");
     }
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -332,7 +333,9 @@ public class Calculadora extends javax.swing.JFrame {
     }
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {
-        txtRes.setText(txtRes.getText() + "");
+        val1 = null;
+        val2 = null;
+        txtRes.setText("");
     }
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,7 +397,6 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {
 
-        txtRes.setText(txtRes.getText() + ".");
     }
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {
